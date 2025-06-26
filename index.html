@@ -81,33 +81,16 @@
     <div id="sidebar-overlay" class="fixed inset-0 bg-black opacity-0 z-30 pointer-events-none md:hidden"></div>
 
     <main class="md:ml-64 p-4 md:p-8">
-        <section id="self-assessment" class="bg-gray-700 rounded-lg shadow-xl p-6 md:p-8 mb-12">
-            <h2 class="text-3xl font-bold text-center mb-8 text-gray-50">Professional Self-Assessment</h2>
-            <section id="self-assessment" class="bg-white rounded-lg shadow-xl p-6 md:p-8 mb-12">
-            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Professional Self-Assessment</h2>
-            <div class="content-prose max-w-4xl mx-auto">
-                <p>This is where my self-assessment content would go.</p>
-                <p>I would write it directly in HTML syntax here, for example:</p>
-                <ul>
-                    <li><strong>Problem Solving:</strong> My problem-solving skills have greatly improved...</li>
-                    <li><strong>Communication:</strong> I've learned the importance of clear communication...</li>
-                    <li><strong>Teamwork:</strong> Collaborating on projects has taught me...</li>
-                </ul>
-                <h3>Areas for Improvement</h3>
-                <p>I am continuously working on deepening my understanding of...</p>
-            </div>
-        </section>
-
-        <section id="project-narrative" class="bg-white rounded-lg shadow-xl p-6 md:p-8 mb-12">
-            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Artifact Narrative</h2>
-            <div class="content-prose max-w-4xl mx-auto text-gray-700">
+        <section id="project-narrative" class="bg-gray-700 rounded-lg shadow-xl p-6 md:p-8 mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-50">Artifact Narrative</h2>
+            <div class="content-prose max-w-4xl mx-auto text-gray-50">
 
                 <p>The Weight Tracker Android mobile application was initially developed for CS-360 Mobile Architecture and Programming. The initial state of the app was nowhere near a scalable solution. Even so, the project was able to get me familiar with the essentials of Android development. I learned to implement the design patterns that can connect application logic with an Android user interface. This practice made it much easier to migrate my backend services to Firebase, while I expanded the complexity of the project with additional items for user data and the inclusion of data visualization. The initial concepts learned in CS-360 allowed me to design my project in a way that carries greater potential over time as I learn more.</p>
 
                 <h3 class="text-2xl font-bold mt-8 mb-4 text-gray-800" id="user-authentication">Software Design: User Authentication with Firebase Auth</h3>
                 <div class="flex flex-col md:flex-row items-center md:items-start gap-8 mb-8 bg-gray-50 p-6 rounded-lg shadow-md">
                     <div class="md:w-1/2">
-                        <img src="assets/images/CapstoneLOGIN.png" alt="Weight Tracker Login Screen"
+                        <img src="CapstoneLOGIN.png" alt="Weight Tracker Login Screen"
                              class="rounded-md object-contain w-full h-auto border border-gray-200 shadow-lg">
                         <p class="text-center text-gray-600 font-medium mt-2">Figure 1: User Login Screen</p>
                     </div>
@@ -124,7 +107,7 @@
                         <p>After creating methods that enabled me to add filters and time periods for the line chart, there still exists a great deal of potential in the additional health metrics we added to the program. These can be incorporated into the data visualization when I can decide on creative ways to correlate different metrics.</p>
                     </div>
                     <div class="md:w-1/2 order-1 md:order-2">
-                        <img src="assets/images/CapstoneDISPLAY.png" alt="Weight Tracker Display Screen with Data"
+                        <img src="CapstoneDISPLAY.png" alt="Weight Tracker Display Screen with Data"
                              class="rounded-md object-contain w-full h-auto border border-gray-200 shadow-lg">
                         <p class="text-center text-gray-600 font-medium mt-2">Figure 2: Main Data Display (Recycler View)</p>
                     </div>
@@ -133,7 +116,7 @@
                 <h4 class="text-xl font-bold mt-6 mb-3 text-gray-800" id="chart-views">Diving Deeper: Weekly, Monthly, and Yearly Trends</h4>
                 <div class="flex flex-col md:flex-row items-center md:items-start gap-8 mb-8 bg-gray-50 p-6 rounded-lg shadow-md">
                     <div class="md:w-1/2">
-                        <img src="assets/images/CapstoneCHARTMONTH.png" alt="Weight Tracker Monthly Chart"
+                        <img src="CapstoneCHARTMONTH.png" alt="Weight Tracker Monthly Chart"
                              class="rounded-md object-contain w-full h-auto border border-gray-200 shadow-lg">
                         <p class="text-center text-gray-600 font-medium mt-2">Figure 3: Month Filter Chart</p>
                     </div>
@@ -147,7 +130,7 @@
                         <p>The weekly chart offers a more granular view, enabling users to pinpoint specific days or weeks where their weight changed significantly, crucial for daily routine adjustments.</p>
                     </div>
                     <div class="md:w-1/2 order-1 md:order-2">
-                        <img src="assets/images/CapstoneCHARTWEEK.png" alt="Weight Tracker Weekly Chart"
+                        <img src="CapstoneCHARTWEEK.png" alt="Weight Tracker Weekly Chart"
                              class="rounded-md object-contain w-full h-auto border border-gray-200 shadow-lg">
                         <p class="text-center text-gray-600 font-medium mt-2">Figure 4: Week Filter Chart</p>
                     </div>
@@ -155,7 +138,7 @@
 
                 <div class="flex flex-col md:flex-row items-center md:items-start gap-8 mb-8 bg-gray-50 p-6 rounded-lg shadow-md">
                     <div class="md:w-1/2">
-                        <img src="assets/images/CapstoneCHARTYEAR.png" alt="Weight Tracker Yearly Chart"
+                        <img src="CapstoneCHARTYEAR.png" alt="Weight Tracker Yearly Chart"
                              class="rounded-md object-contain w-full h-auto border border-gray-200 shadow-lg">
                         <p class="text-center text-gray-600 font-medium mt-2">Figure 5: Year Filter Chart</p>
                     </div>
@@ -171,7 +154,7 @@
                         <p>Validation ensures that only valid numerical inputs are accepted for weight, preventing common data entry errors.</p>
                     </div>
                     <div class="md:w-1/2 order-1 md:order-2">
-                        <img src="assets/images/CapstoneADD1.png" alt="Weight Tracker Add Entry Part 1"
+                        <img src="CapstoneADD1.png" alt="Weight Tracker Add Entry Part 1"
                              class="rounded-md object-contain w-full h-auto border border-gray-200 shadow-lg">
                         <p class="text-center text-gray-600 font-medium mt-2">Figure 6: Add Entry Screen</p>
                     </div>
@@ -179,7 +162,7 @@
 
                 <div class="flex flex-col md:flex-row items-center md:items-start gap-8 mb-8 bg-gray-50 p-6 rounded-lg shadow-md">
                     <div class="md:w-1/2">
-                        <img src="assets/images/CapstoneADD2.png" alt="Weight Tracker Add Entry Part 2 - Date Picker"
+                        <img src="CapstoneADD2.png" alt="Weight Tracker Add Entry Part 2 - Date Picker"
                              class="rounded-md object-contain w-full h-auto border border-gray-200 shadow-lg">
                         <p class="text-center text-gray-600 font-medium mt-2">Figure 7: Date Picker for Entries</p>
                     </div>
@@ -212,55 +195,6 @@ Databases: Data Persistence with Firebase Firestore
 	I chose to transition to Firebase Firestore with the similar idea of future potential for my application. Switching from a local SQLite database to a cloud-based solution was much simpler than it should be. With Firestore I can learn more about NoSQL data modeling capabilities while I benefit from real-time synchronization. Similar to my FirebaseAuth, I modified my existing CRUD methods to leverage the Firestore services. I’m happy with this design choice, although it was easier than other methods, because of the Firestore dashboard and analytics I’m provided with. Also learning about the Firestore batch.write methods helped me to generate a year’s worth of user data to test out my newly implemented data visualization.
 
                 </div>
-        </section>
-
-
-        <section id="screenshots" class="bg-gray-700 rounded-lg shadow-xl p-6 md:p-8 mb-12">
-            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Weight Tracker App Screenshots</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
-
-                <div class="bg-gray-50 rounded-lg shadow-md p-4 flex flex-col items-center w-full max-w-sm">
-                    <img src="CapstoneLOGIN.png" alt="Weight Tracker Login Screen"
-                         class="rounded-md object-contain mb-4 w-full h-64 border border-gray-200">
-                    <p class="text-center text-gray-50 font-medium">Login Screen</p>
-                </div>
-
-                <div class="bg-gray-50 rounded-lg shadow-md p-4 flex flex-col items-center w-full max-w-sm">
-                    <img src="CapstoneDISPLAY.png" alt="Weight Tracker Display Screen"
-                         class="rounded-md object-contain mb-4 w-full h-64 border border-gray-200">
-                    <p class="text-center text-gray-50 font-medium">Recycler View w/Cards</p>
-                </div>
-
-                <div class="bg-gray-50 rounded-lg shadow-md p-4 flex flex-col items-center w-full max-w-sm">
-                    <img src="CapstoneCHARTMONTH.png" alt="Weight Tracker Monthly Chart"
-                         class="rounded-md object-contain mb-4 w-full h-64 border border-gray-200">
-                    <p class="text-center text-gray-50 font-medium">Month Filter</p>
-                </div>
-
-                <div class="bg-gray-50 rounded-lg shadow-md p-4 flex flex-col items-center w-full max-w-sm">
-                    <img src="CapstoneCHARTWEEK.png" alt="Weight Tracker Weekly Chart"
-                         class="rounded-md object-contain mb-4 w-full h-64 border border-gray-200">
-                    <p class="text-center text-gray-50 font-medium">Week Chart</p>
-                </div>
-
-                <div class="bg-gray-50 rounded-lg shadow-md p-4 flex flex-col items-center w-full max-w-sm">
-                    <img src="CapstoneCHARTYEAR.png" alt="Weight Tracker Yearly Chart"
-                         class="rounded-md object-contain mb-4 w-full h-64 border border-gray-200">
-                    <p class="text-center text-gray-50 font-medium">Year Filter</p>
-                </div>
-
-                <div class="bg-gray-50 rounded-lg shadow-md p-4 flex flex-col items-center w-full max-w-sm">
-                    <img src="CapstoneADD1.png" alt="Weight Tracker Add Entry Part 1"
-                         class="rounded-md object-contain mb-4 w-full h-64 border border-gray-200">
-                    <p class="text-center text-gray-50 font-medium"t 1>Data Entry</p>
-                </div>
-
-                <div class="bg-gray-50 rounded-lg shadow-md p-4 flex flex-col items-center w-full max-w-sm">
-                    <img src="CapstoneADD2.png" alt="Weight Tracker Add Entry Part 2"
-                         class="rounded-md object-contain mb-4 w-full h-64 border border-gray-200">
-                    <p class="text-center text-gray-50 font-medium">Date Picker</p>
-                </div>
-            </div>
         </section>
 
     </main>
