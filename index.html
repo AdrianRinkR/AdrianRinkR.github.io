@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdrianRinkR</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Optional: Google Font - Inter for a clean, modern look -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -57,15 +55,13 @@
 </head>
 <body class="bg-gray-900 text-gray-50">
 
-    <!-- Hamburger Icon for Mobile/Tablet -->
     <button id="sidebar-toggle" class="fixed top-4 left-4 z-50 p-2 rounded-md bg-green-600 text-white md:hidden shadow-lg focus:outline-none focus:ring-2 focus:ring-green-400">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
     </button>
 
-    <!-- Sidebar Navigation -->
-    <nav id="sidebar" class="sidebar fixed top-0 left-0 h-full w-64 bg-gray-800 text-white z-40 transform -translate-x-full md:translate-x-0 md:relative md:w-64 flex flex-col shadow-lg">
+    <nav id="sidebar" class="sidebar fixed top-0 left-0 h-full w-64 bg-gray-800 text-white z-40 transform -translate-x-full md:translate-x-0 md:fixed flex flex-col shadow-lg">
         <div class="p-6 text-center border-b border-gray-700">
             <h2 class="text-3xl font-bold text-green-400">Adrian RinkR</h2>
             <p class="text-sm text-gray-400 mt-1">Computer Science ePortfolio</p>
@@ -76,81 +72,68 @@
             <li><a href="#project-narrative" class="block py-2 px-4 rounded-md hover:bg-gray-700 transition duration-300">Project Narrative</a></li>
             <li><a href="#screenshots" class="block py-2 px-4 rounded-md hover:bg-gray-700 transition duration-300">Screenshots</a></li>
             <li><a href="https://youtu.be/Wft0GklzaD4" class="block py-2 px-4 rounded-md hover:bg-gray-700 transition duration-300" target="_blank">Code Review Video</a></li>
-            <li><a href="WeightTrackerImproved/src/main/java/com/example/adrianrodriguezweighttrackingapp" class="block py-2 px-4 rounded-md hover:bg-gray-700 transition duration-300" target="_blank">Full App Code</a></li>
+            <li><a href="YOUR_PUBLIC_CODE_REPOSITORY_URL_HERE" class="block py-2 px-4 rounded-md hover:bg-gray-700 transition duration-300" target="_blank">Full App Code</a></li>
         </ul>
         <div class="p-4 text-center text-xs text-gray-500 border-t border-gray-700">
         </div>
     </nav>
 
-    <!-- Overlay for when sidebar is open on mobile -->
     <div id="sidebar-overlay" class="fixed inset-0 bg-black opacity-0 z-30 pointer-events-none md:hidden"></div>
 
-    <!-- Main Content Area -->
     <main class="md:ml-64 p-4 md:p-8">
-        <!-- Professional Self-Assessment Section -->
         <section id="self-assessment" class="bg-white rounded-lg shadow-xl p-6 md:p-8 mb-12">
             <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Professional Self-Assessment</h2>
             <div class="content-prose max-w-4xl mx-auto">
-                <!-- Professional Self Assessment Here -->            </div>
+                </div>
         </section>
 
-        <!-- Project Narrative Section (Overall App Evolution) -->
         <section id="project-narrative" class="bg-white rounded-lg shadow-xl p-6 md:p-8 mb-12">
             <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Weight Tracker App: Overall Project Narrative</h2>
             <div class="content-prose max-w-4xl mx-auto">
-                <!--Add Improvement Narrative.md here-->
-            </div>
+                </div>
         </section>
 
 
-        <!-- Screenshots Section - The core of visual placement manipulation -->
         <section id="screenshots" class="bg-white rounded-lg shadow-xl p-6 md:p-8 mb-12">
             <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Weight Tracker App Screenshots</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
 
-                <!-- Individual Screenshot Card 1 -->
                 <div class="bg-gray-50 rounded-lg shadow-md p-4 flex flex-col items-center w-full max-w-sm">
                     <img src="CapstoneLOGIN.png" alt="Weight Tracker Login Screen"
                          class="rounded-md object-contain mb-4 w-full h-64 border border-gray-200">
                     <p class="text-center text-gray-600 font-medium">Login Screen</p>
                 </div>
 
-                <!-- Individual Screenshot Card 2 -->
                 <div class="bg-gray-50 rounded-lg shadow-md p-4 flex flex-col items-center w-full max-w-sm">
                     <img src="CapstoneDISPLAY.png" alt="Weight Tracker Display Screen"
                          class="rounded-md object-contain mb-4 w-full h-64 border border-gray-200">
                     <p class="text-center text-gray-600 font-medium">Recycler View w/Cards</p>
                 </div>
 
-                <!-- Individual Screenshot Card 3 -->
                 <div class="bg-gray-50 rounded-lg shadow-md p-4 flex flex-col items-center w-full max-w-sm">
                     <img src="CapstoneCHARTMONTH.png" alt="Weight Tracker Monthly Chart"
                          class="rounded-md object-contain mb-4 w-full h-64 border border-gray-200">
                     <p class="text-center text-gray-600 font-medium">Month Filter</p>
                 </div>
 
-                <!-- Individual Screenshot Card 4 -->
                 <div class="bg-gray-50 rounded-lg shadow-md p-4 flex flex-col items-center w-full max-w-sm">
                     <img src="CapstoneCHARTWEEK.png" alt="Weight Tracker Weekly Chart"
                          class="rounded-md object-contain mb-4 w-full h-64 border border-gray-200">
                     <p class="text-center text-gray-600 font-medium">Week Chart</p>
                 </div>
 
-                <!-- Individual Screenshot Card 5 -->
                 <div class="bg-gray-50 rounded-lg shadow-md p-4 flex flex-col items-center w-full max-w-sm">
                     <img src="CapstoneCHARTYEAR.png" alt="Weight Tracker Yearly Chart"
                          class="rounded-md object-contain mb-4 w-full h-64 border border-gray-200">
                     <p class="text-center text-gray-600 font-medium">Year Filter</p>
                 </div>
 
-                 <!-- Individual Screenshot Card 6 -->
                 <div class="bg-gray-50 rounded-lg shadow-md p-4 flex flex-col items-center w-full max-w-sm">
                     <img src="CapstoneADD1.png" alt="Weight Tracker Add Entry Part 1"
                          class="rounded-md object-contain mb-4 w-full h-64 border border-gray-200">
                     <p class="text-center text-gray-600 font-medium"t 1>Data Entry</p>
                 </div>
 
-                 <!-- Individual Screenshot Card 7 -->
                 <div class="bg-gray-50 rounded-lg shadow-md p-4 flex flex-col items-center w-full max-w-sm">
                     <img src="CapstoneADD2.png" alt="Weight Tracker Add Entry Part 2"
                          class="rounded-md object-contain mb-4 w-full h-64 border border-gray-200">
@@ -161,7 +144,6 @@
 
     </main>
 
-    <!-- JavaScript for Sidebar Functionality -->
     <script>
         const sidebar = document.getElementById('sidebar');
         const sidebarToggle = document.getElementById('sidebar-toggle');
@@ -201,5 +183,3 @@
     </script>
 </body>
 </html>
-
- 
