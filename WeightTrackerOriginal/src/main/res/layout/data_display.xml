@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/header_date"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="4dp" /> <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/header_weight"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="4dp" /> <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/header_notes"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="4dp" /> <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/header_delete"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="4dp" /> </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayoutData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="12/10/2024"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="4dp" /> <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:text="150 lbs"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="4dp" /> <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:text="Morning Weigh-in"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="4dp" /> <Button
+        android:id="@+id/buttonDeleteRow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:text="@string/delete_button_text"
+        android:paddingHorizontal="4dp" /> </GridLayout>
+
+    <Button
+        android:id="@+id/buttonAddData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/add_data_button" />
+</LinearLayout>

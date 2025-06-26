@@ -1,0 +1,20 @@
+<resources>
+    <!-- Strings for Login Screen -->
+    <string name="app_name">AdrianRodriguezWeightTrackingApp</string>
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="login_create">Create Account</string>
+
+    <!-- Strings for Display Screen -->
+    <string name="header_date">Date</string>
+    <string name="header_weight">Weight</string>
+    <string name="header_notes">Notes</string>
+    <string name="header_delete">Delete</string>
+    <string name="delete_button_text">Delete</string>
+    <string name="add_data_button">Add Data</string>
+
+    <!-- Strings for Permission Dialog -->
+    <string name="request_permission">Would you like to receive an SMS notification when you reach your goal weight?</string>
+    <string name="grant_permission">Grant Permission</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Weight History"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewWeightData"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" /> <TextView
+    android:id="@+id/textViewNoDataMessage"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:text="No weight data recorded yet. Add an entry!"
+    android:textSize="18sp"
+    android:textStyle="italic"
+    android:visibility="gone" /> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonAddData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_data_button"
+        android:layout_marginBottom="8dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout_button_text"
+        app:backgroundTint="@android:color/holo_red_light" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonViewCharts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Charts"
+        android:layout_gravity="end"
+        android:layout_marginBottom="8dp"/>
+
+</LinearLayout>
+</LinearLayout>

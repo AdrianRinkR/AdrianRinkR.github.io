@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/textViewItemDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="Date: 2024-06-21" />
+
+            <TextView
+                android:id="@+id/textViewItemWeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="end"
+                android:text="Weight: 150.5 lbs" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewItemNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp"
+            android:text="Notes: Had a good workout today."
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/textViewItemSleep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"
+            android:text="Sleep: 7.5 hours"
+            android:visibility="gone" /> <TextView
+        android:id="@+id/textViewItemSteps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"
+        android:text="Steps: 10,000"
+        android:visibility="gone" /> <TextView
+        android:id="@+id/textViewItemCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"
+        android:text="Calories: 2200 kcal"
+        android:visibility="gone" /> <TextView
+        android:id="@+id/textViewItemMood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginBottom="12dp"
+        android:text="Mood: Positive"
+        android:visibility="gone" /> <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonItemDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        app:icon="@drawable/ic_delete"
+        app:backgroundTint="@android:color/holo_red_light"
+        android:layout_gravity="end" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
